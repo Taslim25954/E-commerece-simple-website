@@ -6,7 +6,7 @@
 html , body{
     height: 100%;
     width: 100%;
-    background-color:black;
+    background-color:rgb(139, 113, 113);
     color: white;
 }
 
@@ -15,7 +15,7 @@ html , body{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 30px;
+  padding: 20px 40px;
   background: rgb(13, 148, 117);
   position: relative;
   z-index: 10;
@@ -23,10 +23,10 @@ html , body{
 }
 
 
-.logo img {
- height: 50px;
- width: 50px;
- border-radius: 50%;
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+  color:white;
 }
 
 /* Desktop Menu */
@@ -496,23 +496,18 @@ transition: all 0.5s ease-in-out;
 
 .services {
   width: 90%;
-  margin: 0 auto;               /* Center always */
   display: flex;
   justify-content: space-between;
   flex-direction: row;
-  flex-wrap: wrap;               /* Wrap allow – no gap issue */
+  margin-left: 1.5rem;
   gap: 1rem;
-  margin-top: 2rem;
 }
 
 .service-box {
-  width: 30%;                    /* Desktop 3 cards per row */
-  background:black;
-  padding: 1rem;
+  background: #fff;
   border-radius: 10px;
   text-align: left;
   transition: 0.3s;
-  color: white;
 }
 
 .service-box:hover {
@@ -522,6 +517,7 @@ transition: all 0.5s ease-in-out;
 .icon {
   font-size: 40px;
   margin-bottom: 15px;
+  display: inline-block;
 }
 
 .service-box h3 {
@@ -533,6 +529,8 @@ transition: all 0.5s ease-in-out;
   color: #555;
   font-size: 14px;
 }
+
+
 
 
 
@@ -613,7 +611,7 @@ transition: all 0.5s ease-in-out;
 
 /* our customer says  */
 
-#testo{
+#testimonials{
   height: 100%;
   width: 100%;
   margin-bottom: 5rem;
@@ -787,8 +785,6 @@ transition: all 0.5s ease-in-out;
   color: #fff;
   padding: 40px 20px;
   font-family: sans-serif;
-  margin-top: 5%;
-  margin-bottom: -10%;
 }
 
 /* Newsletter */
@@ -855,22 +851,8 @@ transition: all 0.5s ease-in-out;
 
 /* show th all homne and about                       and section every where             */
 
-.bog{
-    width: 96%;
-     flex-wrap: wrap;
-    margin-left: 1.5rem;
-    display: flex;
-    flex-direction:row;
-    justify-content: space-between;
-   
-    .box{
-        height: 230px;
-        width: 330px;
-        background-color: black;
-        margin-top: 2rem;
-      
-    }
-}
+
+
 
 
 
@@ -1270,12 +1252,18 @@ transition: all 0.5s ease-in-out;
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      
     
   }
 }
 
 
-/* here edit                                        here idet  */
+@media (max-width: 768px) {
+  #testimonials {
+    margin-bottom: 150%;
+  }
+}
+
 
 
 @media (max-width: 768px) {
@@ -1286,7 +1274,6 @@ transition: all 0.5s ease-in-out;
     flex-direction: column;
     align-items: center;
     margin-left: 1.5rem;
-
   }
   .product-container2{
     height: 100%;
@@ -1339,4 +1326,16 @@ transition: all 0.5s ease-in-out;
     width: 100%;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
